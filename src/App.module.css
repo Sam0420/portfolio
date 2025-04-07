@@ -1,0 +1,8 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, #fdfdfd, #f0f4f8);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

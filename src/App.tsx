@@ -1,34 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styles from './App.module.css'
+import {HeroSection} from './components/HeroSection';
+import {PromptCard} from './components/PromptCard';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className={styles.appContainer}>
+    <HeroSection/>
+
+    <PromptCard
+        prompt="A fun fact about me"
+        answer="I once debugged a React app in a dream and woke up to the real fix 😅"
+      />
+      <PromptCard
+        prompt="My ideal tech stack"
+        answer="React + TypeScript + Node.js + MongoDB — but always open to trying cool stuff!"
+      />
+      <PromptCard
+        prompt="A project I'm proud of"
+        answer="A Pomodoro app with dark/light mode and time-based animations. Learned a lot about React hooks!"
+      />
+      <PromptCard
+        prompt="Let's build together if..."
+        answer="You’re passionate about clean code, good vibes, and meaningful user experiences 💫"
+      />
+
+
+    </div>
   )
 }
 
