@@ -1,4 +1,4 @@
-import {styles} from './ProjectCard.module.css'
+import styles from './ProjectCard.module.css'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 interface ProjectCardProps  {

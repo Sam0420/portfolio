@@ -2,6 +2,7 @@ import styles from './App.module.css'
 import {HeroSection} from './components/HeroSection';
 import {PromptCard} from './components/PromptCard';
 import { TechProfileSection } from './components/TechProfileSection';
+import { ProjectSection } from './components/ProjectSection';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div className={styles.appContainer}>
     <HeroSection/>
     <TechProfileSection/>
+    <ProjectSection/>
 
     <PromptCard
         prompt="A fun fact about me"
