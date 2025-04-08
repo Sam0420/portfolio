@@ -1,12 +1,14 @@
 import styles from './App.module.css'
 import {HeroSection} from './components/HeroSection';
 import {PromptCard} from './components/PromptCard';
+import { TechProfileSection } from './components/TechProfileSection';
 
 function App() {
 
   return (
     <div className={styles.appContainer}>
     <HeroSection/>
+    <TechProfileSection/>
 
     <PromptCard
         prompt="A fun fact about me"
